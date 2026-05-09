@@ -1,0 +1,53 @@
+.wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+
+.panel {
+  width: min(520px, 100%);
+  border-radius: 22px;
+  padding: 26px 22px;
+  text-align: center;
+}
+
+.orb {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  margin: 0 auto 10px;
+  background: radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.95), rgba(59, 130, 246, 0.15)),
+    linear-gradient(135deg, rgba(168, 85, 247, 0.55), rgba(34, 211, 238, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 60px rgba(59, 130, 246, 0.25);
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.bar {
+  margin-top: 16px;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--grad-1), var(--grad-2), var(--grad-3));
+}
+

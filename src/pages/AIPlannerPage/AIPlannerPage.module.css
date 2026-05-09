@@ -1,0 +1,185 @@
+.page {
+  display: grid;
+  gap: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.grid > section:nth-child(1) {
+  grid-column: span 6;
+}
+.grid > section:nth-child(2) {
+  grid-column: span 6;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.subjectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.subjects {
+  display: grid;
+  gap: 12px;
+}
+
+.subjectCard {
+  border-radius: 22px;
+  padding: 14px;
+}
+
+.subjectTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.badge {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.subjectTitle {
+  flex: 1;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.remove {
+  border: none;
+  background: transparent;
+  color: var(--danger);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.input {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 12px;
+  color: var(--text);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--ring);
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.12);
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.day {
+  border-radius: 22px;
+  padding: 14px;
+}
+
+.dayTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayDate {
+  font-weight: 950;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+
+.dayHours {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.blocks {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.blockDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-top: 4px;
+}
+
+.blockTitle {
+  font-weight: 900;
+  color: var(--text);
+}
+
+.blockHours {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  margin-left: 6px;
+}
+
+.blockSub {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+@media (max-width: 1100px) {
+  .grid > section:nth-child(1),
+  .grid > section:nth-child(2) {
+    grid-column: span 12;
+  }
+  .week {
+    grid-template-columns: 1fr;
+  }
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}
+

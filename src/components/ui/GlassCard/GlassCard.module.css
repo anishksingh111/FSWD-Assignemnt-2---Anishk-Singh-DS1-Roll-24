@@ -1,0 +1,35 @@
+.card {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.header {
+  padding: 16px 16px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.body {
+  padding: 16px;
+}
+

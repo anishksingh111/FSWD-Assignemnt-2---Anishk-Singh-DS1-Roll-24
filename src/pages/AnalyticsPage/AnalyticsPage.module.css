@@ -1,0 +1,80 @@
+.page {
+  display: grid;
+  gap: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.grid > section:nth-child(1) {
+  grid-column: span 3;
+}
+.grid > section:nth-child(2) {
+  grid-column: span 4;
+}
+.grid > section:nth-child(3) {
+  grid-column: span 5;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.pieWrap {
+  height: 300px;
+}
+
+.chartWrap {
+  height: 280px;
+}
+
+.metrics {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.metric {
+  border-radius: 18px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.metricLabel {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.metricValue {
+  margin-top: 4px;
+  font-weight: 950;
+  color: var(--text);
+  font-size: 22px;
+  letter-spacing: -0.4px;
+}
+
+@media (max-width: 1100px) {
+  .grid > section:nth-child(1),
+  .grid > section:nth-child(2),
+  .grid > section:nth-child(3) {
+    grid-column: span 12;
+  }
+  .pieWrap,
+  .chartWrap {
+    height: 260px;
+  }
+}
+

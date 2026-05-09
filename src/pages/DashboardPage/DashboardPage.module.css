@@ -1,0 +1,146 @@
+.page {
+  display: grid;
+  gap: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.grid > section:nth-child(1) {
+  grid-column: span 5;
+}
+.grid > section:nth-child(2) {
+  grid-column: span 3;
+}
+.grid > section:nth-child(3) {
+  grid-column: span 4;
+}
+.grid > section:nth-child(4) {
+  grid-column: span 12;
+}
+
+.progressRow {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.big {
+  font-size: 34px;
+  font-weight: 950;
+  letter-spacing: -0.8px;
+  color: var(--text);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.btnRow {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.streak {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.streakNum {
+  font-size: 54px;
+  font-weight: 950;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.streakText {
+  margin-top: 6px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.quote {
+  color: var(--text);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.tasks {
+  display: grid;
+  gap: 10px;
+}
+
+.taskRow {
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.taskTitle {
+  font-weight: 800;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskMeta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.priority {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 11px;
+}
+
+.priority[data-p='high'] {
+  border-color: rgba(251, 113, 133, 0.35);
+  background: rgba(251, 113, 133, 0.1);
+}
+.priority[data-p='medium'] {
+  border-color: rgba(251, 191, 36, 0.32);
+  background: rgba(251, 191, 36, 0.1);
+}
+.priority[data-p='low'] {
+  border-color: rgba(52, 211, 153, 0.28);
+  background: rgba(52, 211, 153, 0.1);
+}
+
+.analyticsRow {
+  display: grid;
+}
+
+.chartWrap {
+  height: 280px;
+}
+
+@media (max-width: 1100px) {
+  .grid > section:nth-child(1),
+  .grid > section:nth-child(2),
+  .grid > section:nth-child(3) {
+    grid-column: span 12;
+  }
+}
+

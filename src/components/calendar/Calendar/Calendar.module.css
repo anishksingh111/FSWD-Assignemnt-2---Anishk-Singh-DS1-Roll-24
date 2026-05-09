@@ -1,0 +1,106 @@
+.wrap {
+  display: grid;
+  gap: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.month {
+  font-weight: 950;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+
+.navBtn {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.dow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.dowCell {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.cellEmpty {
+  height: 74px;
+}
+
+.cell {
+  height: 74px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.cell:hover {
+  border-color: rgba(34, 211, 238, 0.28);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+.day {
+  color: var(--text);
+  font-weight: 900;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  align-items: end;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legendItem {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
